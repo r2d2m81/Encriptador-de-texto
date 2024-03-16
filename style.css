@@ -1,0 +1,233 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    max-width: 1280px;
+    background: url(Imagenes/wallpaperflare.com_wallpaper.jpg) center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    padding: 20px; /* Aumentar el espacio alrededor del encabezado */
+}
+
+.logotipo{
+    width: 100px;
+    padding: 25px 0 0 0;
+}
+
+.frame-title{
+    width: 720px;
+    height: 40px;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #0A3871;
+    position: absolute;
+}
+
+/* main */
+.contenido {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 300px;
+    margin: 70px 80px;
+}
+
+textarea{
+    width: 700px;
+    height: 300px;
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    color: #23282c;
+}
+
+.texto{
+    margin: 0 50px 0;
+    font-size: 32px;
+    background-color: transparent;
+}
+
+/* inferior - botones */
+.frame-advice{
+    width: 900px;
+    height: 15px;
+    opacity: 0.8;
+    margin: 0 0 30px 10px;
+}
+
+.logo-advice{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 200px;
+}
+
+.advice{
+    color:#ffffff;
+    font-style: italic;
+    display: unset;
+    font-weight:600;
+}
+
+@keyframes blink{
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/*  BOTONES  */
+
+.buttons{
+    width: auto;
+    height: 67px;
+    padding-left: 160px;
+    display: flex;
+    max-width: 100%;
+}
+
+.bttnEncript{
+    background: #0A3871;
+    color: white;
+}
+
+.bttnUnencript{
+    margin-left: 20px;
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+.bttnEncript, .bttnUnencript, .bttnCopy{
+    width: auto;
+    margin: 0 10px;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px;
+    gap: 8px;
+    font-size: 17px;
+}
+
+.bttnEncript:hover, .bttnUnencript:hover, .bttnCopy:hover{
+    transition: 400ms;
+    transform: scale(95%);
+}
+
+/* tarejta lateral */
+
+.hide {
+    display: none;
+}
+
+/* TARJETA MSJ NOENCONTRADO/ENCONTRADO */
+
+.tarjetaLateral-txt,
+.result-output {
+    width: 100%; /* Hacer que la tarjeta lateral ocupe todo el ancho disponible */
+    max-width: 400px; /* Establecer un ancho máximo para evitar que la tarjeta se vuelva demasiado ancha */
+    margin: 20px auto; /* Centrar la tarjeta lateral */
+}
+
+.tarjetaLateral-txt{
+    width: 400px;
+    height: 620px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.925);
+    position: absolute;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.frame-img-muneco{
+    width: 400px;
+    margin: 30px 0 10px 0;
+}
+
+.mensaje1{
+    margin: 60px 20px 20px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje2{
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #495057;
+}
+ 
+/*  TARJETA MSJ ENCRIPTADO */
+
+.result-output{
+    width: 400px;
+    height: 620px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.925);
+    position: absolute;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.output-text{
+    padding-top: 50px;
+    text-align: center;
+    place-content: middle;
+    font-size: 30px; 
+}
+
+.bttnCopy{
+    margin-left: 40px;
+    margin-top: 450px;
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 60px 0;
+    width: 1519px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    position: relative;
+}
+
+.social{
+    margin-top: 10px;
+}
+
+.bttn-Linkedin,
+.bttn-Github {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bttn-Linkedin img,
+.bttn-Github img{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.bttn-Linkedin:hover img,
+.bttn-Github:hover img{
+    transform: scale(1.1);
+}
+
+/* PAGE RESPONSIVE */
